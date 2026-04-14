@@ -4,7 +4,7 @@ const getBaseURL = () => {
   if (process.env.NODE_ENV === "development") {
     return "http://localhost:5000/api";
   }
-  return "https://grovio-ai-assignment-2.onrender.com/api"; // 
+  return "https://grovio-ai-assignment-1.onrender.com/api"; 
 };
 
 const api = axios.create({

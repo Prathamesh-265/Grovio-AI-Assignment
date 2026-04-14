@@ -9,6 +9,9 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({ origin: "*" }));
+app.get("/", (req, res) => {
+  res.json({ message: "API running 🚀" });
+});
 app.use(express.json({ limit: "2mb" }));
 app.use(morgan("dev"));
 
